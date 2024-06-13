@@ -1,23 +1,26 @@
-[
-  {
-    "date": "March 2023 - Present",
-    "title": "Frontend Developer",
-    "company": "Beprofit",
-    "description": "I have developed complex, reusable Vue.js components with Pinia for state management, optimized performance and scalability by refactoring legacy code, and collaborated with UX/UI designers and backend developers for seamless feature integration. I also used WebSocket for real-time data display and Chart.js for intuitive data visualizations.",
-    "tags": ["JavaScript", "Vue", "Chart.js"]
-  },
-  {
-    "date": "June 2022 - November 2022",
-    "title": "Frontend Developer",
-    "company": "Fundbox",
-    "description": "During my role, I led the development of new features and functionalities from concept to production. I specialized in building single-page applications using Vue.js, Vuex, CSS (Sass), and Django, focusing on delivering seamless user experiences. I also improved code quality by expanding test coverage with Jest for unit testing and utilizing Cypress for end-to-end testing, ensuring reliable software delivery.",
-    "tags": ["JavaScript", "Vue", "Cypress"]
-  },
-  {
-    "date": "November 2020 - May 2022",
-    "title": "Full Stack Developer",
-    "company": "RightCode Labs",
-    "description": "In a small team setting, I developed websites and applications using React, TypeScript, and Node.js, covering both client-side and server-side tasks. I focused on implementing API services with database integration using Node.js Express and gained experience working with backend APIs.",
-    "tags": ["JavaScript", "TypeScript", "React", "Node.js"]
-  }
-]
+{
+  "title": "Experience.",
+  "experiences": [
+    {
+      "date": "March 2023 - Present",
+      "title": "Frontend Developer",
+      "company": "Beprofit",
+      "description": "I have developed complex, reusable Vue.js components with Pinia for state management, optimized performance and scalability by refactoring legacy code, and collaborated with UX/UI designers and backend developers for seamless feature integration. I also used WebSocket for real-time data display and Chart.js for intuitive data visualizations.",
+      "tags": ["JavaScript", "Vue", "Chart.js"]
+    },
+    {
+      "date": "June 2022 - November 2022",
+      "title": "Frontend Developer",
+      "company": "Fundbox",
+      "description": "During my role, I led the development of new features and functionalities from concept to production. I specialized in building single-page applications using Vue.js, Vuex, CSS (Sass), and Django, focusing on delivering seamless user experiences. I also improved code quality by expanding test coverage with Jest for unit testing and utilizing Cypress for end-to-end testing, ensuring reliable software delivery.",
+      "tags": ["JavaScript", "Vue", "Cypress"]
+    },
+    {
+      "date": "November 2020 - May 2022",
+      "title": "Full Stack Developer",
+      "company": "RightCode Labs",
+      "description": "In a small team setting, I developed websites and applications using React, TypeScript, and Node.js, covering both client-side and server-side tasks. I focused on implementing API services with database integration using Node.js Express and gained experience working with backend APIs.",
+      "tags": ["JavaScript", "TypeScript", "React", "Node.js"]
+    }
+  ]
+}
