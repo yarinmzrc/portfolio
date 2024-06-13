@@ -4,7 +4,7 @@ import ExperienceCard from "./ExperienceCard";
 
 function Experience() {
   return (
-    <section className="md:pt-32">
+    <section id="experience" className="md:pt-32">
       <h2 className="mb-8 text-3xl font-semibold text-secondary-light md:text-6xl">
         Experience.
       </h2>

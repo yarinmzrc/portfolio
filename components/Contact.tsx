@@ -2,7 +2,10 @@ import Button from "./Button";
 
 function Contact() {
   return (
-    <section className="flex flex-col items-center text-center md:pt-32">
+    <section
+      id="contact"
+      className="flex flex-col items-center text-center md:pt-32"
+    >
       <h2 className="mb-6 text-3xl font-semibold text-secondary-light md:text-6xl">
         Get In Touch.
       </h2>

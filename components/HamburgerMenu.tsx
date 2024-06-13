@@ -8,7 +8,7 @@ interface HamburgerMenuProps {
 
 function HamburgerMenu({ toggleMenu, isMenuOpen }: HamburgerMenuProps) {
   return (
-    <div className="md:hidden z-50">
+    <div className="z-50 md:hidden">
       <AnimatePresence mode="wait">
         {isMenuOpen ? (
           <motion.div
@@ -19,7 +19,7 @@ function HamburgerMenu({ toggleMenu, isMenuOpen }: HamburgerMenuProps) {
             transition={{ duration: 0.2 }}
           >
             <CgClose
-              className="text-2xl cursor-pointer hover:text-primary"
+              className="cursor-pointer text-2xl hover:text-primary"
               onClick={toggleMenu}
             />
           </motion.div>
@@ -32,7 +32,7 @@ function HamburgerMenu({ toggleMenu, isMenuOpen }: HamburgerMenuProps) {
             transition={{ duration: 0.2 }}
           >
             <CgMenuRightAlt
-              className="text-2xl cursor-pointer hover:text-primary"
+              className="cursor-pointer text-2xl hover:text-primary"
               onClick={toggleMenu}
             />
           </motion.div>

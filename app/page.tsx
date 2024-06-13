@@ -9,14 +9,16 @@ import NavBar from "components/components/NavBar";
 
 export default function Page() {
   return (
-    <main className="container mx-auto flex min-h-full flex-col gap-20 px-6 py-12 text-secondary-light md:gap-40 md:px-12 lg:px-20">
+    <div>
       <NavBar />
-      <Home />
-      <About />
-      <Experience />
-      <Contact />
-      <Footer />
-      <BlurCircle />
-    </main>
+      <main className="container mx-auto flex min-h-full flex-col gap-20 px-6 py-12 text-secondary-light md:gap-40 md:px-12 lg:px-20">
+        <Home />
+        <About />
+        <Experience />
+        <Contact />
+        <Footer />
+        <BlurCircle />
+      </main>
+    </div>
   );
 }

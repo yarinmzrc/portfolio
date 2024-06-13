@@ -5,11 +5,11 @@ library.add(fab);
 
 function About() {
   return (
-    <section className="md:pt-32">
-      <h2 className="font-semibold text-secondary-light text-3xl md:text-6xl mb-8">
+    <section id="about" className="md:pt-32">
+      <h2 className="mb-8 text-3xl font-semibold text-secondary-light md:text-6xl">
         About me.
       </h2>
-      <p className="text-lg text-secondary max-w-[50rem] mb-8">
+      <p className="mb-8 max-w-[50rem] text-lg text-secondary">
         My passion for frontend development ignited like wildfire when I watched
         a YouTube video of a developer creating a landing page from scratch
         using just HTML and CSS. The process was mesmerizing, and it opened my
