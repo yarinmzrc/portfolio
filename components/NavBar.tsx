@@ -1,6 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
+import { useState } from "react";
+import HamburgerMenu from "./HamburgerMenu";
+import { motion } from "framer-motion";
 
 const links = [
   { name: "home", label: "Home" },
@@ -25,16 +30,34 @@ const NavLink: React.FC<NavLinkProps> = ({ name, label }) => {
 };
 
 function NavBar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+
   return (
-    <div className="flex items-center justify-between">
+    <nav className="sticky navbar top-0  flex justify-between items-center py-4 bg-base-100 z-50">
       <Image src="/logo.svg" alt="portfolio logo" width={30} height={30} />
-      <div className="flex items-center gap-16">
-        {links.map((link) => (
-          <NavLink key={link.name} name={link.name} label={link.label} />
+      <div className="hidden md:flex items-center gap-16">
+        {links.map(({ name, label }) => (
+          <NavLink key={name} name={name} label={label} />
         ))}
         <Button>Resume</Button>
       </div>
-    </div>
+      <HamburgerMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+      {isMenuOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.2 }}
+          className="md:hidden fixed inset-0 backdrop-blur-xl flex flex-col gap-6 items-center justify-center z-40"
+        >
+          {links.map(({ name, label }) => (
+            <NavLink key={name} name={name} label={label} />
+          ))}
+        </motion.div>
+      )}
+    </nav>
   );
 }
 
