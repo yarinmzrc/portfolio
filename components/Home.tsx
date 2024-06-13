@@ -2,7 +2,7 @@ import Button from "./Button";
 
 function Home() {
   return (
-    <section id="home" className="md:pt-32">
+    <section id="home" className="md:pt-24">
       <p className="mb-4 text-primary">Hello, my name is</p>
       <h1 className="mb-4 text-4xl font-bold text-secondary-light md:text-7xl">
         Yarin Mizrachi
