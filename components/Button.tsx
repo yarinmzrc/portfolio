@@ -1,4 +1,4 @@
-import { clsx } from "clsx";
+import { cn } from "components/utils";
 import { ButtonHTMLAttributes } from "react";
 
 const variantClasses = {
@@ -10,8 +10,13 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary";
 }
 
-function Button({ variant = "primary", children, ...props }: ButtonProps) {
-  const classes = clsx(variantClasses[variant], props.className);
+function Button({
+  variant = "primary",
+  className,
+  children,
+  ...props
+}: ButtonProps) {
+  const classes = cn(variantClasses[variant], className);
 
   return (
     <button className={classes} {...props}>
