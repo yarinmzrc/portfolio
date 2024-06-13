@@ -23,7 +23,7 @@ const NavLink: React.FC<NavLinkProps> = ({
       smooth={true}
       duration={500}
       spy={true}
-      offset={-70}
+      offset={-100}
       className={classes}
       onSetActive={() => setSelected(label)}
       onClick={toggleMenu}
