@@ -10,7 +10,7 @@ function Home() {
       <h2 className="font-semibold text-secondary text-3xl md:text-6xl mb-8">
         And I’m A Frontend Developer.
       </h2>
-      <p className="text-lg max-w-[33rem] mb-8">
+      <p className="text-secondary text-lg max-w-[33rem] mb-8">
         Frontend Developer with 3 years of experience in building responsive
         websites and web applications. Proficient in HTML, CSS, JavaScript, and
         modern libraries and frameworks.

@@ -35,7 +35,7 @@ function NavBar() {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <nav className="sticky navbar top-0  flex justify-between items-center py-4 bg-base-100 z-50">
+    <nav className="flex justify-between items-center py-4 bg-base-100 z-50">
       <Image src="/logo.svg" alt="portfolio logo" width={30} height={30} />
       <div className="hidden md:flex items-center gap-16">
         {links.map(({ name, label }) => (
