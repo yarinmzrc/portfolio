@@ -11,8 +11,9 @@ function About() {
         And I’m A Frontend Developer.
       </h2>
       <p className="text-lg max-w-[33rem] mb-8">
-        Frontend Developer who transforms ideas into stunning web applications
-        by day and scores goals on the football field by night.
+        Frontend Developer with 3 years of experience in building responsive
+        websites and web applications. Proficient in HTML, CSS, JavaScript, and
+        modern libraries and frameworks.
       </p>
       <Button className="py-2 px-4">Get to know me better</Button>
     </section>
