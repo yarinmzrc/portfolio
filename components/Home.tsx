@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-function About() {
+function Home() {
   return (
     <section className="md:pt-32">
       <p className="text-primary mb-4">Hello, my name is</p>
@@ -20,4 +20,4 @@ function About() {
   );
 }
 
-export default About;
+export default Home;
