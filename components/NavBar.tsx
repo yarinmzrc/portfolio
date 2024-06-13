@@ -6,6 +6,7 @@ import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu";
 import { motion } from "framer-motion";
 import NavLink from "./NavLink";
+import Link from "next/link";
 
 const links = [
   { name: "home", label: "Home" },
@@ -37,7 +38,9 @@ function NavBar() {
               toggleMenu={toggleMenu}
             />
           ))}
-          <Button>Resume</Button>
+          <Link href="/portfolio.pdf" target="_blank">
+            <Button>Resume</Button>
+          </Link>
         </div>
         <HamburgerMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       </div>
