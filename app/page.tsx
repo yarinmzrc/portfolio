@@ -4,7 +4,6 @@ import Contact from "components/components/Contact";
 import Experience from "components/components/Experience";
 import Footer from "components/components/Footer";
 import Home from "components/components/Home";
-``;
 import NavBar from "components/components/NavBar";
 
 export default function Page() {
