@@ -24,6 +24,7 @@ function Home() {
         duration={500}
         spy={true}
         offset={-100}
+        className="max-w-max"
       >
         <Button className="px-4 py-2">{buttonText}</Button>
       </ScrollLink>
