@@ -1,5 +1,5 @@
-import Button from "./Button";
 import text from "../data/contact.json";
+import EmailButton from "./EmailButton";
 
 const { title, description, buttonText } = text;
 
@@ -13,7 +13,9 @@ function Contact() {
         {title}
       </h2>
       <p className="mb-6 text-secondary md:max-w-[620px]">{description}</p>
-      <Button className="px-4 py-2">{buttonText}</Button>
+      <EmailButton email="yarinmzrc@gmail.com" className="px-4 py-2">
+        {buttonText}
+      </EmailButton>
     </section>
   );
 }
