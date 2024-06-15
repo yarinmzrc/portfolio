@@ -7,7 +7,7 @@ interface ExperienceCardProps {
 function ExperienceCard({ experience }: ExperienceCardProps) {
   const { date, title, company, description, tags } = experience;
   return (
-    <div className="grid max-w-[1100px] grid-cols-1 rounded-lg border-t border-t-customBlue p-8 shadow-sm transition-all hover:border-t-secondary-light/15 hover:bg-[#294B67]/20 md:grid-cols-6 md:gap-10">
+    <div className="grid max-w-[1100px] grid-cols-1 rounded-lg border-t border-t-secondary-light/15 bg-[#294B67]/20 p-8 shadow-sm transition-all hover:border-t-secondary-light/15 hover:bg-[#294B67]/20 md:grid-cols-6 md:gap-10 md:border-t-customBlue md:[&:not(:hover)]:bg-customBlue">
       <p className="text-sm text-secondary-dark md:col-span-2">{date}</p>
       <div className="flex flex-col gap-4 md:col-span-4">
         <p className="font-medium">

@@ -10,9 +10,11 @@ function Experience() {
       <h2 className="mb-8 text-3xl font-semibold text-secondary-light md:text-6xl">
         {title}
       </h2>
-      {experiences.map((experience: TExperience) => (
-        <ExperienceCard key={experience.title} experience={experience} />
-      ))}
+      <div className="flex flex-col gap-5 md:gap-0">
+        {experiences.map((experience: TExperience) => (
+          <ExperienceCard key={experience.title} experience={experience} />
+        ))}
+      </div>
     </section>
   );
 }

@@ -19,10 +19,12 @@ const icons = [
 function About() {
   return (
     <section id="about" className="md:pt-32">
-      <h2 className="mb-8 text-3xl font-semibold text-secondary-light md:text-6xl">
+      <h2 className="mb-4 text-3xl font-semibold text-secondary-light md:mb-8 md:text-6xl">
         {title}
       </h2>
-      <p className="mb-8 max-w-[50rem] text-lg text-secondary">{description}</p>
+      <p className="mb-8 max-w-[50rem] text-base text-secondary md:text-lg">
+        {description}
+      </p>
       <div className="flex items-center gap-4">
         {icons.map(({ icon, name }) => (
           <TechnologyIcon key={icon} icon={icon as IconName} name={name} />

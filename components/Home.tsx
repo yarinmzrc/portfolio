@@ -7,15 +7,17 @@ const { welcomeTitle, title, subtitle, description, buttonText } = textInfo;
 
 function Home() {
   return (
-    <section id="home" className="md:pt-24">
-      <p className="mb-4 text-primary">{welcomeTitle}</p>
-      <h1 className="mb-4 text-4xl font-bold text-secondary-light md:text-7xl">
+    <section id="home" className="flex flex-col gap-4 md:pt-24">
+      <p className="text-primary">{welcomeTitle}</p>
+      <h1 className="text-2xl font-bold text-secondary-light sm:text-4xl md:text-7xl">
         {title}
       </h1>
-      <h2 className="mb-8 text-3xl font-semibold text-secondary md:text-6xl">
+      <h2 className="text-xl font-semibold text-secondary sm:text-2xl md:text-6xl">
         {subtitle}
       </h2>
-      <p className="mb-8 max-w-[33rem] text-lg text-secondary">{description}</p>
+      <p className="mb-4 max-w-[33rem] text-base text-secondary md:text-lg">
+        {description}
+      </p>
       <ScrollLink
         to="about"
         smooth={true}
