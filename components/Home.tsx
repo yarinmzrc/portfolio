@@ -1,5 +1,7 @@
+"use client";
 import Button from "./Button";
 import textInfo from "../data/info.json";
+import { Link as ScrollLink } from "react-scroll";
 
 const { welcomeTitle, title, subtitle, description, buttonText } = textInfo;
 
@@ -14,7 +16,15 @@ function Home() {
         {subtitle}
       </h2>
       <p className="mb-8 max-w-[33rem] text-lg text-secondary">{description}</p>
-      <Button className="px-4 py-2">{buttonText}</Button>
+      <ScrollLink
+        to="about"
+        smooth={true}
+        duration={500}
+        spy={true}
+        offset={-100}
+      >
+        <Button className="px-4 py-2">{buttonText}</Button>
+      </ScrollLink>
     </section>
   );
 }
