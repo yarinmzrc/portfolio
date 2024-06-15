@@ -3,7 +3,7 @@ interface NavLinkProps {
   label: string;
   selected: string;
   setSelected: (label: string) => void;
-  toggleMenu: () => void;
+  toggleMenu?: () => void;
 }
 import { Link as ScrollLink } from "react-scroll";
 

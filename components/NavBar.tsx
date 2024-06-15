@@ -35,7 +35,6 @@ function NavBar() {
               label={label}
               selected={selected}
               setSelected={setSelected}
-              toggleMenu={toggleMenu}
             />
           ))}
           <Link href="/portfolio.pdf" target="_blank">
