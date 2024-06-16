@@ -1,4 +1,4 @@
-import text from "../data/contact.json";
+import text from "../content/contact.json";
 import EmailButton from "./EmailButton";
 
 const { title, description, buttonText } = text;

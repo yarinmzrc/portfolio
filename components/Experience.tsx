@@ -1,5 +1,5 @@
 import { TExperience } from "../types";
-import experiencesInfo from "../data/experience.json";
+import experiencesInfo from "../content/experience.json";
 import ExperienceCard from "./ExperienceCard";
 
 const { experiences, title } = experiencesInfo;

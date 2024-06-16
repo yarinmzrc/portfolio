@@ -1,6 +1,6 @@
 "use client";
 import Button from "./Button";
-import textInfo from "../data/info.json";
+import textInfo from "../content/info.json";
 import { Link as ScrollLink } from "react-scroll";
 
 const { welcomeTitle, title, subtitle, description, buttonText } = textInfo;

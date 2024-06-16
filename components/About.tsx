@@ -1,4 +1,4 @@
-import text from "../data/about.json";
+import text from "../content/about.json";
 import { IconName, library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import TechnologyIcon from "./TechnologyIcon";
