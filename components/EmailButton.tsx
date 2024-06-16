@@ -1,5 +1,5 @@
 "use client";
-import React, { ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes } from "react";
 import Button from "./Button";
 
 interface EmailButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
