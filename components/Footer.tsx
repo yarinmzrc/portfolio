@@ -15,11 +15,11 @@ function Footer() {
         <Image src="/logo.svg" alt="portfolio logo" width={14} height={14} />
       </div>
       <div className="flex items-center justify-center gap-4">
-        <Link href={LINKEDIN_LINK} target="_blank">
+        <Link href={GITHUB_LINK} target="_blank">
           <LuGithub className={iconClasses} />
         </Link>
         <div className="h-5 border-l border-l-primary"></div>
-        <Link href={GITHUB_LINK} target="_blank">
+        <Link href={LINKEDIN_LINK} target="_blank">
           <LuLinkedin className={iconClasses} />
         </Link>
       </div>
