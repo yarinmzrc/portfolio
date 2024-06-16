@@ -19,7 +19,7 @@ const BlurCircle = () => {
 
   return (
     <div
-      className="pointer-events-none fixed h-[700px] w-[700px] rounded-full bg-blue-500 bg-opacity-5 blur-[100px] filter"
+      className="pointer-events-none fixed hidden h-[700px] w-[700px] rounded-full bg-blue-500 bg-opacity-5 blur-[100px] filter md:block"
       style={{
         left: position.x,
         top: position.y,
