@@ -22,9 +22,7 @@ function About() {
       <h2 className="mb-4 text-3xl font-semibold text-secondary-light md:mb-8 md:text-6xl">
         {title}
       </h2>
-      <p className="mb-8 max-w-[50rem] text-base text-secondary md:text-lg">
-        {description}
-      </p>
+      <p className="mb-8 max-w-[50rem] text-secondary">{description}</p>
       <div className="flex items-center gap-4">
         {icons.map(({ icon, name }) => (
           <TechnologyIcon key={icon} icon={icon as IconName} name={name} />

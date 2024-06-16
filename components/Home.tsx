@@ -15,9 +15,7 @@ function Home() {
       <h2 className="text-xl font-semibold text-secondary sm:text-2xl md:text-5xl">
         {subtitle}
       </h2>
-      <p className="mb-4 max-w-[33rem] text-base text-secondary md:text-lg">
-        {description}
-      </p>
+      <p className="mb-4 max-w-[33rem] text-secondary">{description}</p>
       <ScrollLink
         to="about"
         smooth={true}
