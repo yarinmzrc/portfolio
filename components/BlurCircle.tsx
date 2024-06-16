@@ -6,7 +6,7 @@ const BlurCircle = () => {
   const [position, setPosition] = useState({ x: -100, y: -100 });
 
   useEffect(() => {
-    const handleMouseMove = (event: any) => {
+    const handleMouseMove = (event: MouseEvent) => {
       setPosition({ x: event.clientX, y: event.clientY });
     };
 
