@@ -1,5 +1,5 @@
 import text from "../data/about.json";
-import { IconName, IconProp, library } from "@fortawesome/fontawesome-svg-core";
+import { IconName, library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import TechnologyIcon from "./TechnologyIcon";
 library.add(fab);
