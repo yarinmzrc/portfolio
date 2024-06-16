@@ -2,7 +2,6 @@ export { default as About } from "./About";
 export { default as BlurCircle } from "./BlurCircle";
 export { default as Button } from "./Button";
 export { default as Contact } from "./Contact";
-export { default as EmailButton } from "./EmailButton";
 export { default as Experience } from "./Experience";
 export { default as ExperienceCard } from "./ExperienceCard";
 export { default as Footer } from "./Footer";

@@ -1,9 +1,15 @@
+"use client";
+import { Button } from ".";
 import text from "../content/contact.json";
-import EmailButton from "./EmailButton";
 
 const { title, description, buttonText } = text;
 
 function Contact() {
+  function sendEmail() {
+    const mailtoLink = `mailto:yarinmzrc@gmail.com`;
+    window.location.href = mailtoLink;
+  }
+
   return (
     <section
       id="contact"
@@ -13,9 +19,9 @@ function Contact() {
         {title}
       </h2>
       <p className="mb-6 text-secondary md:max-w-[620px]">{description}</p>
-      <EmailButton email="yarinmzrc@gmail.com" className="px-4 py-2">
+      <Button className="px-4 py-2" onClick={sendEmail}>
         {buttonText}
-      </EmailButton>
+      </Button>
     </section>
   );
 }

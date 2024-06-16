@@ -1,4 +1,5 @@
-import React, { createContext, useState, useContext } from "react";
+"use client";
+import React, { createContext, useState } from "react";
 
 export interface NavBarContextType {
   selected: string;
