@@ -1,12 +1,10 @@
 import { CgClose, CgMenuRightAlt } from "react-icons/cg";
 import { AnimatePresence, motion } from "framer-motion";
+import { useNavBarContext } from "../hooks/useNavBarContext";
 
-interface HamburgerMenuProps {
-  toggleMenu: () => void;
-  isMenuOpen: boolean;
-}
+function HamburgerMenu() {
+  const { isMenuOpen, toggleMenu } = useNavBarContext();
 
-function HamburgerMenu({ toggleMenu, isMenuOpen }: HamburgerMenuProps) {
   return (
     <div className="z-50 md:hidden">
       <AnimatePresence mode="wait">
