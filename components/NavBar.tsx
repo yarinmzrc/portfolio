@@ -11,7 +11,7 @@ function NavBarContent() {
 
   return (
     <nav
-      className={`navbar sticky top-0 z-50 w-full ${!isMenuOpen ? "backdrop-blur-lg" : ""}`}
+      className={`navbar sticky top-0 z-50 w-full ${!isMenuOpen ? "backdrop-fallback" : ""}`}
     >
       <div className="container relative mx-auto flex items-center justify-between px-6 py-6 text-secondary-light md:px-12 lg:px-20">
         <Image src="/logo.svg" alt="portfolio logo" width={30} height={30} />

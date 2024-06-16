@@ -11,3 +11,17 @@
 body {
   min-height: 100dvh;
 }
+
+.backdrop-fallback {
+  background-color: #0f1b26;
+}
+
+@supports (
+  (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))
+) {
+  .backdrop-fallback {
+    background-color: transparent;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
