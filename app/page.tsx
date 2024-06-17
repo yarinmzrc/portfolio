@@ -1,12 +1,10 @@
-import {
-  About,
-  BlurCircle,
-  Experience,
-  Contact,
-  Footer,
-  Home,
-  NavBar,
-} from "../components";
+import About from "components/components/About";
+import BlurCircle from "components/components/BlurCircle";
+import Contact from "components/components/Contact";
+import Experience from "components/components/Experience";
+import Footer from "components/components/Footer";
+import Home from "components/components/Home";
+import NavBar from "components/components/NavBar";
 
 export default function Page() {
   return (
